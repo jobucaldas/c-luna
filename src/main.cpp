@@ -1,7 +1,4 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-
-using namespace std;
+#include"game.h"
 
 int main(void){
     sf::RenderWindow window(sf::VideoMode(800, 600), "Lunare");
@@ -15,6 +12,7 @@ int main(void){
                 window.close();
         }
 
+        window.draw(game);
         window.clear();
         window.display();
     }
